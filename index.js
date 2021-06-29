@@ -14,7 +14,7 @@ class CrewCandidate {
       for(let i = 0; i < this.scores.length; i++){
         total = total + this.scores[i];
       }
-      return Math.floor(total/this.scores.length);
+      return Math.floor((total/this.scores.length)*10)/10;
     }
     status(){
     let status = '';
