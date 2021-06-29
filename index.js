@@ -9,12 +9,12 @@ class CrewCandidate {
       this.scores.push(score);
     }
     average(){
-      let total = 0 
+      let total = 0
 
       for(let i = 0; i < this.scores.length; i++){
         total = total + this.scores[i];
       }
-      return total/this.scores.length;
+      return Math.floor(total/this.scores.length);
     }
     status(){
     let status = '';
